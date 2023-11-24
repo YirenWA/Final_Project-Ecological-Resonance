@@ -1,6 +1,7 @@
 # Ecological_Resonance
 Note: It is necessary to establish a TCP server and import OpenCV to run the script within the Blender file.  
-### Video Link: https://youtu.be/UEF9MdYHU90
+### Video Link: 
+https://youtu.be/UEF9MdYHU90
 
 ## WEEK 0
 The preliminary work involved repeatedly adjusting the theme of the Final project. After numerous discussions with my supervisor, we finally chose _Ecological Resonance_ as the final topic.  
@@ -92,15 +93,43 @@ Example of the sine_wave function used for calculations.
 
 ## WEEK 5
 ### OpenCV
-This week is 
-我打算采用OpenCV进行
-先在python内进行OpenCV对图像灰度化和二值化的处理，然后再将这部分内容添加到blender的脚本内。（import OpenCV库）
-![opencv](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/3885077d-b361-4483-a371-4d25ccb1d01c)
+This week, the focus was primarily on researching OpenCV based on the Python language, and organizing the framework of the thesis.   
+
+I utilized OpenCV's image processing to implement the content of the touchless interactive system in the artwork. First, the camera images were processed for grayscale and binarization within Python using OpenCV, and then this content was integrated into the Blender script. OpenCV libraries were introduced within Blender. 
+
+![opencv](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/3885077d-b361-4483-a371-4d25ccb1d01c)  
+
+![结构图](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/218dd313-431f-4b62-ab52-4b7589b5edda)
+
+Depending on the structure of the installation. The camera images undergo grayscale and binarization processing. This method represents sand as black pixels and the bright monitor below as white pixels. Through this approach, it becomes possible to calculate information about the sand's coverage area in the frame. 
+
+![opencv 图像处理 ](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/9253d838-fdea-43db-9a18-b17916162f77)
 
 ## WEEK 6
-多线程设计
+This week's work primarily involved using real-time data from the OpenCV camera to control the changes in Geometry Node parameters within Blender.    
+
+I found the limitations of single-threaded execution make it infeasible to simultaneously preview both the real-time rendering window and the OpenCV camera window. Therefore, I adopted a multi-threaded solution to concurrently run and manage these two functions.   
+
+### Multi-Threaded Design
+1.	The first thread is the Camera Thread. It utilizes the OpenCV library to capture real-time images from the camera  process the images.  
+
+![gray_2](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/39686d68-5b98-4bc2-823f-3f2a0d2bf7bd)
+
+2.	The second thread is the Blender Control Thread. It integrates the work of the target object's geometry node properties developed. When specific conditions are met, this thread is responsible for updating these properties, thus enabling dynamic effects on the target objects.   
+
+![gray_3](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/316cd51a-00ac-43a0-8d56-d2cf5c43ccdf)
+
+
+3.	The third thread is the Monitor Thread. It continuously monitors the proportion of black and white pixels in the grayscale image. When specific conditions are met, it triggers other threads to execute corresponding operations. Condition locks and notification mechanisms are utilized here to ensure synchronization between threads.  
+
+![gray_4](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/8b0d2238-179b-4189-b9ab-30064dc29302)
+
+
+
 ![Process3_bpy_input node_2](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/0a72e0d2-cfc3-4e0d-9273-949af368a480)
+
 小的沙子覆盖测试
+![小测试](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/01d911e0-abd9-4721-a4eb-05978b71dc92)
 
 ## WEEK 7
 This week is 主要是在装置场景搭建设计
@@ -112,5 +141,8 @@ To create an immersive experience, I made a sand model to simulate urban crevice
 ## WEEK8
 ### Test  
 将所有内容整合到一起，进行测试
+
+![图表_画板 1](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/500a1485-fbc4-4425-be3d-2c7f1ac5e472)
+
 视频拍摄剪辑
 ### Result
