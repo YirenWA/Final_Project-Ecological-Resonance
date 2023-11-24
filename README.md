@@ -44,13 +44,30 @@ Subsequently, I engaged in extensive geometry node modeling work. In the process
 To simulate the effects of natural randomness, I also extensively used Texture modules like "Noise Texture" and "Wave Texture." The utilization of these modules further enhanced the realism and visual appeal of the models. Eventually, various parts of the structure could achieve natural movements such as swaying, stretching, and rotating.   
 
 ## WEEK3
-本周的工作
-贴图，渲染。发现了Eevee渲染
+The main focus of this week's work was to lay the foundation for the models within Blender to participate in real-time rendering. 
+### Rendering
+In the initial design, I consistently worked on shader editing of materials under the Cycles rendering engine. However, to ensure smoothness in real-time interaction, I have to choose Eevee as the rendering engine. Eevee prioritizes rapid rendering and interactive experiences, capable of generating quick previews in a short time. But at this point I realised that Eevee does not entirely trace ray paths, resulting in some limitations in achieving lifelike visuals and lighting accuracy. This results in a much less visually effective scene.   
+
+![E--C](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/5f77f62d-7ff3-4420-a95c-d8907c8b057b)
+
+So I conducted a series of optimization experiments to solve the problem:   
+To start, I activated the Ambient Occlusion feature in the Eevee rendering engine. This feature is commonly used to simulate the effect of light obstruction in recessed areas, thereby enhancing the rendering quality. Simultaneously, I incorporated the Ambient Occlusion module into the Shader Editor of the model's materials to accentuate the lighting and shadows in the recessed areas, enhancing the scene's details and realism. This method proves more convenient and effective compared to creating soft shadows using an array of lights.  
+
+![AO—](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/0bfa5a14-3472-4164-bcaf-8f1a136ecb13)
+
+I also adjusted like applying textures to the material's Displacement output and reducing subsurface scattering in materials. The comparison of Eevee rendering effects before and after adjustments is shown below.  
+
 ![E--EC](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/3c313e69-dd18-47ce-8cc4-6f31e5fc0899)
-控制运动形态的节点选择
+
+### Geometric Node Selection
+Finally, for different organisms, I selected nodes that would change their forms. These were then added to the Group Input for convenient direct control of node parameters later on.    
+
+![节点选择](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/bcc8ce98-c474-4c26-9261-7713636f96f1)
+An example of node selection for one model.  
+
 ## WEEK4
-### Control Target Objects propor
 This week is 
+### Control the properties of the target object(s)
 最开始通过插件Alter mesh将几何节点模型及其节点输入端口导入Unreal Engine。然而通过实验发现，支持其参数更改的模型类型不支持实时交互窗口的应用。
 所以我尝试从Blender软件本身寻找突破。使用Blender Python API来访问程序的内部可以极大地扩展Blender几何节点的交互功能。所以在Blender中通过TCP连接与其他应用程序通信可以实现数据传输和交换，
 使用bpy，在脚本内控制几何节点输入端口  
