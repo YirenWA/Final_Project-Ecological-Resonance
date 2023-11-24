@@ -92,9 +92,9 @@ I found that the initial method of "continuously increasing or decreasing a cons
 Example of the sine_wave function used for calculations.   
 
 ## WEEK 5
-### OpenCV
 This week, the focus was primarily on researching OpenCV based on the Python language, and organizing the framework of the thesis.   
 
+### OpenCV
 I utilized OpenCV's image processing to implement the content of the touchless interactive system in the artwork. First, the camera images were processed for grayscale and binarization within Python using OpenCV, and then this content was integrated into the Blender script. OpenCV libraries were introduced within Blender. 
 
 ![opencv](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/3885077d-b361-4483-a371-4d25ccb1d01c)  
@@ -119,17 +119,20 @@ I found the limitations of single-threaded execution make it infeasible to simul
 
 ![gray_3](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/316cd51a-00ac-43a0-8d56-d2cf5c43ccdf)
 
-
 3.	The third thread is the Monitor Thread. It continuously monitors the proportion of black and white pixels in the grayscale image. When specific conditions are met, it triggers other threads to execute corresponding operations. Condition locks and notification mechanisms are utilized here to ensure synchronization between threads.  
 
 ![gray_4](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/8b0d2238-179b-4189-b9ab-30064dc29302)
 
+By creating and starting the three threads, the entire interactive process can be successfully implemented.  
 
+### Small Test  
 
-![Process3_bpy_input node_2](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/0a72e0d2-cfc3-4e0d-9273-949af368a480)
+After implementing the above content, I conducted a identification and triggering test using a small screen and the coverage of sand.  
 
-小的沙子覆盖测试
 ![小测试](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/01d911e0-abd9-4721-a4eb-05978b71dc92)
+
+![Process3_bpy_input node_2](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/0a72e0d2-cfc3-4e0d-9273-949af368a480) 
+
 
 ## WEEK 7
 This week is 主要是在装置场景搭建设计
