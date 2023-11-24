@@ -1,5 +1,7 @@
 # _Ecological_Resonance_
-Video Link: 
+### Note: 
+To run the script within the Blender file, it is necessary to establish a TCP server and import OpenCV.  
+### Video Link: 
 ## WEEK1
 This week is primarily focused on establishing the background, theme, content, and form of the artwork.
 
