@@ -157,5 +157,13 @@ To improve interaction accuracy, I further adjusted the sand coverage conditions
 
 ![图表_画板 1](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/500a1485-fbc4-4425-be3d-2c7f1ac5e472)
 
-### Result  
-Video Shooting and Editing
+### Results  
+I ended up video shooting and editing.  
+
+![2](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/2515f052-531f-4228-b88b-c6537b64b485)
+
+![4](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/c02de2e8-8c43-45e3-ad36-8dec1a907974)
+
+![结果](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/73f67ee8-4260-4db5-ad55-f0bf61137547)
+
+![1](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/d2c63e43-646d-443d-ad34-f2804f04cbf1)
