@@ -1,1 +1,1 @@
-# Final_Project_Ecological_Resonance
+# Ecological_Resonance
