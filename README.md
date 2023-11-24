@@ -6,14 +6,24 @@ To run the script within the Blender file, it is necessary to establish a TCP se
 在前期部分对于毕设主题内容进行了反复的调整，尝试了多个主题。和导师多次共同后选定_Ecological_Resonance_作为最终毕设内容。
 ## WEEK1
 This week is primarily focused on establishing the background, theme, content, and form of the artwork.
-背景调研
+### Inspiration  
+如今的生态问题人与生物和谐共存的环境会是什么样子的？我们该如何想象未来环境？  
+The inspiration  
+因为主题背景，使用blender几何节点建模非常符合我的需求。同时也发现了如今的一些关于几何节点建模在实时交互的应用的弊端。  
+### Background
+ "Ecological Resonance" provides a glimpse into the potential past under the development of data and information in the future. In this futuristic scenario, the form of living organisms is considered an event within time and space. To adapt to digital development, organisms in the city construct an evolving lineage over time, with urban crevices becoming new living spaces for these digitally predefined "organisms." 
+ 
+
+### About Work  
+Through a process that resembles archaeological discovery, people can directly intervene in the exhibition space: gaining access to the hidden digital ecosystems beneath the city, while also altering the products of growth and evolution dependent on data. Human activities activate the experience of time and reveal the changing existence over time.  
+
+ _Ecological Resonance_ does not attempt to provide a definite answer to what the future should be. Instead, it strives to promote a spiritual ecology where participants can more effectively raise and discuss these questions. It encourages contemplating the potential impact of human digital traces on the living organisms from speculative and dialectical perspectives.  
+
+When everything achieves harmony, people standing in the real space will discover their integration into the unfolding world before them.
+
 ![草图](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/ef9f5775-9bef-4361-adf0-431f0527d710)
 
-### Inspiration  
-The inspiration comes from daily life. Through observation, I have noticed that people leave many imprints in the physical 
-因为主题背景，使用blender几何节点建模非常符合我的需求。同时也发现了如今的一些关于几何节点建模在实时交互的应用的弊端。
-### About Work  
- _participants will be guided to explore the digital world using physical actions in the real world and leave imprints in the digital space._ 
+
 ## WEEK2
 This week is 
 生物模型设计：我在生物形态设计中引入了线条这一设计元素。选择线条的原因在于其具有传递与连接数据的含义。线条与生物柔软的结构相结合，不仅在视觉上表达了生物的感性特质，还体现了数据的理性属性。线条不仅存在于个体生物内部，同时还贯穿于多个生物体之间，形成相互作用的关联。
