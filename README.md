@@ -1,15 +1,17 @@
 # Ecological_Resonance
-### Note: It is necessary to establish a TCP server and import OpenCV to run the script within the Blender file.  
+Note: It is necessary to establish a TCP server and import OpenCV to run the script within the Blender file.  
 ### Video Link: https://youtu.be/UEF9MdYHU90
 
-## WEEK0
+## WEEK 0
 The preliminary work involved repeatedly adjusting the theme of the Final project. After numerous discussions with my supervisor, we finally chose _Ecological Resonance_ as the final topic.  
 
-## WEEK1
+## WEEK 1
 This week is primarily focused on establishing the background, theme, content, and form of the artwork.
 ### Inspiration  
 What would a future environment where humans and organisms coexist harmoniously look like?   
 How do we imagine the future environment?    
+
+![1](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/5f414d82-9174-4aae-aab0-f481004a9250)
 
 ### Background
 _Ecological Resonance_ provides a glimpse into the potential past under the development of data and information in the future. In this futuristic scenario, the form of living organisms is considered an event within time and space. To adapt to digital development, organisms in the city construct an evolving lineage over time, with urban crevices becoming new living spaces for these digitally predefined "organisms."   
@@ -25,15 +27,24 @@ Through a process that resembles archaeological discovery, people can directly i
 
 _Ecological Resonance_ does not attempt to provide a definite answer to what the future should be. Instead, it strives to promote a spiritual ecology where participants can more effectively raise and discuss these questions. It encourages contemplating the potential impact of human digital traces on the living organisms from speculative and dialectical perspectives. When everything achieves harmony, people standing in the real space will discover their integration into the unfolding world before them.  
 
-## WEEK2
-This week is 
-生物模型设计：我在生物形态设计中引入了线条这一设计元素。选择线条的原因在于其具有传递与连接数据的含义。线条与生物柔软的结构相结合，不仅在视觉上表达了生物的感性特质，还体现了数据的理性属性。线条不仅存在于个体生物内部，同时还贯穿于多个生物体之间，形成相互作用的关联。
-![建模过程](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/e95a920f-fb30-4042-83f1-6421c0f47c0f)
-进行了大量的几何节点建模工作，在工作中，"Instance on Points" 模块是我广泛应用的一个模块。该模块以一种高度灵活的方式支持复杂模型的创建。因此，我能够利用该模块持续叠加元素于生物结构中，从而丰富生物的视觉呈现。  
-为模拟自然随机性的效果，我还广泛应用了“Noise Texture”、“Wave Texture”等纹理模块。这些模块的使用进一步增强了模型的真实感和视觉吸引力。最终各部分结构可以实现自然的摇摆，伸缩，旋转等运动方式。  
+## WEEK 2
+This week, based on the work from the previous week, I began the specific design process. I started by using Blender's geometry nodes to construct various organisms' models.   
+
+### Modeling Design of Organisms
+In my design of organism morphology, I introduced lines as a design element. The reason for choosing lines is that they have the meaning of transmitting and connecting data. When combined with the soft structure of organisms, lines not only visually express the sensual characteristics of organisms, but also reflect the rational attributes of data.   
+
+![2](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/8d97bd0c-e4c3-4104-904b-a1b9b059a953)
+
+![建模过程](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/e95a920f-fb30-4042-83f1-6421c0f47c0f) 
+
+Subsequently, I engaged in extensive geometry node modeling work. In the process, "Instance on Points" module is one that I extensively utilized. This module supports the creation of complex models in a highly flexible manner. Thus, I could continually stack elements within the organism structure using this module, thereby enriching the visual presentation of the organism.   
+
+![GN](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/b9066537-9176-4164-9303-75e5be6dea92)
+
+To simulate the effects of natural randomness, I also extensively used Texture modules like "Noise Texture" and "Wave Texture." The utilization of these modules further enhanced the realism and visual appeal of the models. Eventually, various parts of the structure could achieve natural movements such as swaying, stretching, and rotating.   
 
 ## WEEK3
-This week is 
+本周的工作
 贴图，渲染。发现了Eevee渲染
 ![E--EC](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/3c313e69-dd18-47ce-8cc4-6f31e5fc0899)
 控制运动形态的节点选择
