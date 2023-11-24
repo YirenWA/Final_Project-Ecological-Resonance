@@ -135,20 +135,27 @@ After implementing the above content, I conducted a identification and triggerin
 
 
 ## WEEK 7
-本周主要是在制作装置的各部分内容。
-To create an immersive experience, I made a sand model to simulate urban crevices. 同时它也可以限制沙子不会跑出范围。
+This week mainly involved creating the various components of the installation.  
+
+To create an immersive experience, I made a sand model to simulate urban crevices. It also serves to prevent the sand from going out of bounds.  
+
 ![场景搭建](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/43834317-9658-4b03-a09d-ed7f7a9b4fdf)
-为了贴合显示屏的曲面，并将它稳固在较低的位置上，我制作了一个支撑。  
+
+To conform to the curvature of the monitor and to secure it in a lower position, I made a support.  
+
 ![支撑](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/fd13e11d-c9f0-425d-bcd3-c7861b02820b)
+
+I also did some laser cutting of acrylic boards.  
+
+![激光切割](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/491a6fb0-5c9e-48df-9588-167d68049ca0)
 
 ## WEEK8
 ### Test  
-最终前几周的工作整合到一起，进行了测试。根据精准度的测试，我还对代码进行了调整。
+Finally, I integrated the work of the past few weeks and conducted tests. Based on the results of the accuracy tests, I made further adjustments to the code:  
 
-![图表_画板 1](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/500a1485-fbc4-4425-be3d-2c7f1ac5e472)
 To improve interaction accuracy, I further adjusted the sand coverage conditions and control code content using an overlapping cross method to ensure a closer coordination between the two. This involved introducing more conditions within the sand coverage conditions.   
 
-### 视频拍摄剪辑
+![图表_画板 1](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/500a1485-fbc4-4425-be3d-2c7f1ac5e472)
 
-
-### Result
+### Result  
+Video Shooting and Editing
