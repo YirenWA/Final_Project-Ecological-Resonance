@@ -43,7 +43,7 @@ Subsequently, I engaged in extensive geometry node modeling work. In the process
 
 To simulate the effects of natural randomness, I also extensively used Texture modules like "Noise Texture" and "Wave Texture." The utilization of these modules further enhanced the realism and visual appeal of the models. Eventually, various parts of the structure could achieve natural movements such as swaying, stretching, and rotating.   
 
-## WEEK3
+## WEEK 3
 The main focus of this week's work was to lay the foundation for the models within Blender to participate in real-time rendering. 
 ### Rendering
 In the initial design, I consistently worked on shader editing of materials under the Cycles rendering engine. However, to ensure smoothness in real-time interaction, I have to choose Eevee as the rendering engine. Eevee prioritizes rapid rendering and interactive experiences, capable of generating quick previews in a short time. But at this point I realised that Eevee does not entirely trace ray paths, resulting in some limitations in achieving lifelike visuals and lighting accuracy. This results in a much less visually effective scene.   
@@ -65,31 +65,44 @@ Finally, for different organisms, I selected nodes that would change their forms
 ![节点选择](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/bcc8ce98-c474-4c26-9261-7713636f96f1)
 An example of node selection for one model.  
 
-## WEEK4
-This week is 
+## WEEK 4
 ### Control the properties of the target object(s)
-最开始通过插件Alter mesh将几何节点模型及其节点输入端口导入Unreal Engine。然而通过实验发现，支持其参数更改的模型类型不支持实时交互窗口的应用。
-所以我尝试从Blender软件本身寻找突破。使用Blender Python API来访问程序的内部可以极大地扩展Blender几何节点的交互功能。所以在Blender中通过TCP连接与其他应用程序通信可以实现数据传输和交换，
-使用bpy，在脚本内控制几何节点输入端口  
+To make the previous work realize Interactive 3D, I imported the geometry node models and their node input ports into Unreal Engine using the Alter mesh plugin. However, experiments revealed that the model types supporting parameter changes did not support applications of real-time interactive windows.  
 
-比较了“不断增加或减小常数值”和“正弦函数”两者在改变生物运动节点参数上的视觉效果。在项目实践中发现，使用正弦函数具有平滑过渡，可预测性和灵活性的优势。它更加适用于需要模拟自然或有机运动的场景。我定义了正弦波函数，应用的函数接收三个参数：speed（速度）、upper_limit（波形的上限值）和lower_limit（波形的下限值）。根据当前场景的帧数，计算正弦波的值以模拟周期性的变化。并将计算结果在给定的上限和下限之间。
+Therefore, I attempted to find a breakthrough from within Blender software itself. Using the Blender Python API to access the program's internals significantly expanded the interactive capabilities of Blender's geometry nodes. Communication with other applications via TCP connection within Blender enabled data transmission and exchange. Finally, I used bpy in the Blender script to specify and control the geometry node input ports.  
+I went from controlling a single model to controlling multiple models through scripts with the following design flow:  
+
+![control_1 to 3-01_画板 1_画板 1](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/94f0937d-93be-4ad3-89bb-5b8ea9c9472e)
+
+In the case of controlling a single object:  
+1.	Specify the target object: Clearly define the geometry node object and its input ports.   
+2.	Define the update function: Ensure that changes in the scene progress by one frame with every function call.  
+3.	Define the change function: Used to alter the specified object's attributes. When conditions are met, execute the corresponding modification operations.   
+4.	Define the loop function: Create a timer that triggers the change function at a certain time interval. This operation achieves the cyclic iteration of the organism movement.   
+
+When transitioning from controlling a single object to controlling multiple objects, with an increase in the number of models, I defined the “update list (target list)” function after defining the update function. This function is used to update a batch of objects passed in a list, executing update operations for each object in the list. This batch update method can improve efficiency and ensure that multiple incoming objects are all updated to the latest state.  
+
+### Calculate the Properties' Values of the Target Object
+I found that the initial method of "continuously increasing or decreasing a constant value" caused the motion of the organisms model to stutter. In the project practice, I observed that using a sine function offers the advantages of smooth transitions, predictability, and flexibility. Therefore, I adopted the "sine function" to calculate the properties' values of target objects. The sine function is suitable for scenarios requiring simulation of natural or organic motion. I defined the ‘sine_wave’ function and the applied ‘sine_wave’ function accepted three parameters: ‘speed’, ‘upper_limit’, and ‘lower_limit’. Based on the current scene's frame rate, it calculated the sine wave's value to simulate periodic changes and limited the computed result within the provided upper and lower limits.   
+
 ![sine_wave](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/8fda3c59-73e5-42ea-b5a1-ee7139a945e3)
-定义的sine函数
-![sine wave应用](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/e6be9b8c-1dbe-48db-a6ba-1aa7ff353cf5)
-sine函数的应用
 
-## WEEK5
+![sine wave应用](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/e6be9b8c-1dbe-48db-a6ba-1aa7ff353cf5)
+Example of the sine_wave function used for calculations.   
+
+## WEEK 5
 ### OpenCV
 This week is 
+我打算采用OpenCV进行
 先在python内进行OpenCV对图像灰度化和二值化的处理，然后再将这部分内容添加到blender的脚本内。（import OpenCV库）
 ![opencv](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/3885077d-b361-4483-a371-4d25ccb1d01c)
 
-## WEEK6
+## WEEK 6
 多线程设计
 ![Process3_bpy_input node_2](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/0a72e0d2-cfc3-4e0d-9273-949af368a480)
 小的沙子覆盖测试
 
-## WEEK7
+## WEEK 7
 This week is 主要是在装置场景搭建设计
 To create an immersive experience, I made a sand model to simulate urban crevices. 同时是围栏，也可以限制沙子不会跑出范围。
 ![场景搭建](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/43834317-9658-4b03-a09d-ed7f7a9b4fdf)
@@ -99,4 +112,5 @@ To create an immersive experience, I made a sand model to simulate urban crevice
 ## WEEK8
 ### Test  
 将所有内容整合到一起，进行测试
+视频拍摄剪辑
 ### Result
