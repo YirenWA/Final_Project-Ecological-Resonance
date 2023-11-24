@@ -1,28 +1,29 @@
 # Ecological_Resonance
-### Note: 
-To run the script within the Blender file, it is necessary to establish a TCP server and import OpenCV.  
-### Video Link: 
+### Note: It is necessary to establish a TCP server and import OpenCV to run the script within the Blender file.  
+### Video Link: https://youtu.be/UEF9MdYHU90
+
 ## WEEK0
-在前期部分对于毕设主题内容进行了反复的调整，尝试了多个主题。和导师多次共同后选定_Ecological_Resonance_作为最终毕设内容。
+The preliminary work involved repeatedly adjusting the theme of the Final project. After numerous discussions with my supervisor, we finally chose _Ecological Resonance_ as the final topic.  
+
 ## WEEK1
 This week is primarily focused on establishing the background, theme, content, and form of the artwork.
 ### Inspiration  
-如今的生态问题人与生物和谐共存的环境会是什么样子的？我们该如何想象未来环境？  
-The inspiration  
-因为主题背景，使用blender几何节点建模非常符合我的需求。同时也发现了如今的一些关于几何节点建模在实时交互的应用的弊端。  
+What would a future environment where humans and organisms coexist harmoniously look like?   
+How do we imagine the future environment?    
+
 ### Background
- "Ecological Resonance" provides a glimpse into the potential past under the development of data and information in the future. In this futuristic scenario, the form of living organisms is considered an event within time and space. To adapt to digital development, organisms in the city construct an evolving lineage over time, with urban crevices becoming new living spaces for these digitally predefined "organisms." 
- 
+_Ecological Resonance_ provides a glimpse into the potential past under the development of data and information in the future. In this futuristic scenario, the form of living organisms is considered an event within time and space. To adapt to digital development, organisms in the city construct an evolving lineage over time, with urban crevices becoming new living spaces for these digitally predefined "organisms."   
+
+Due to the artistic background set, using Blender's geometry node modeling fits well with my needs for designing predefined digital organisms. At the same time, I also discovered the current limitations of geometry node modeling in real-time interactive applications. 
 
 ### About Work  
-Through a process that resembles archaeological discovery, people can directly intervene in the exhibition space: gaining access to the hidden digital ecosystems beneath the city, while also altering the products of growth and evolution dependent on data. Human activities activate the experience of time and reveal the changing existence over time.  
+Achieving the technical goal of using Blender's geometry node ports as input objects for touchless real-time interaction also meant realizing _Ecological Resonance_ interactive installation.  
 
- _Ecological Resonance_ does not attempt to provide a definite answer to what the future should be. Instead, it strives to promote a spiritual ecology where participants can more effectively raise and discuss these questions. It encourages contemplating the potential impact of human digital traces on the living organisms from speculative and dialectical perspectives.  
-
-When everything achieves harmony, people standing in the real space will discover their integration into the unfolding world before them.
+Through a process that resembles archaeological discovery, people can directly intervene in the exhibition space: gaining access to the hidden digital ecosystems beneath the city, while also altering the products of growth and evolution dependent on data. Human activities activate the experience of time and reveal the changing existence over time. I made a preliminary design for the structure of the installation. People excavated and exposed hidden organisms, a process that also changed the surrounding environment. The change in environment by humans impacts the organisms' habitat, causing them to continuously adapt to these changes and evolve.  
 
 ![草图](https://github.com/YirenWA/Final_Project-Ecological_Resonance/assets/119879041/ef9f5775-9bef-4361-adf0-431f0527d710)
 
+_Ecological Resonance_ does not attempt to provide a definite answer to what the future should be. Instead, it strives to promote a spiritual ecology where participants can more effectively raise and discuss these questions. It encourages contemplating the potential impact of human digital traces on the living organisms from speculative and dialectical perspectives. When everything achieves harmony, people standing in the real space will discover their integration into the unfolding world before them.  
 
 ## WEEK2
 This week is 
