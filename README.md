@@ -1,5 +1,5 @@
 # _Ecological_Resonance_
-Video Link: https://www.youtube.com/watch?v=oIYKefJnTX8
+Video Link: 
 ## WEEK1
 This week is primarily focused on establishing the background, theme, content, and form of the artwork.
 
@@ -9,21 +9,21 @@ The inspiration comes from daily life. Through observation, I have noticed that 
 ### About Work  
  _participants will be guided to explore the digital world using physical actions in the real world and leave imprints in the digital space._ 
 ## WEEK2
-
+This week is 
 
 ## WEEK3
-
+This week is 
 
 ## WEEK4
-
+This week is 
 
 ## WEEK5
-
+This week is 
 
 ## WEEK6
 
-
+This week is 
 ## WEEK7
 
-
+This week is 
 ## WEEK8
