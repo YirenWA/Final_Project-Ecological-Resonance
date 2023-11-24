@@ -9,3 +9,21 @@ The inspiration comes from daily life. Through observation, I have noticed that 
 ### About Work  
  _participants will be guided to explore the digital world using physical actions in the real world and leave imprints in the digital space._ 
 ## WEEK2
+
+
+## WEEK3
+
+
+## WEEK4
+
+
+## WEEK5
+
+
+## WEEK6
+
+
+## WEEK7
+
+
+## WEEK8
